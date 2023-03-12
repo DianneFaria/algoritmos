@@ -1,0 +1,52 @@
+Dianne Faria de Brito 1 ADS - lista 3
+
+Exercício 1
+correto = False
+while correto == False:
+    nota = int(input('Insira uma nota de 0 a 10: '))
+    if (nota >= 0 and nota <= 10):
+        correto = True
+print("nota correta")
+
+----------------------------------------------------
+Exercício 2
+infos = True
+
+while infos == True:
+    nome = str(input('Insira seu nome de usuário: '))
+    senha = str(input('Insira sua senha: '))
+    if nome == senha:
+        print('O nome de usuário e senha são iguais, insira novamente!')
+    else:
+        infos = False
+        print('Seu nome de usuário e senha foram recebidos com sucesso!')
+
+----------------------------------------------------
+Exercício 3 
+a = 80000
+b = 200000
+x = 0
+while b > a:
+    b = (b * 0.015) + b
+    a = (a * 0.03) + a
+    x = x + 1
+print(f'Demorou {x} anos para que o país A tenha a mesma quantidade de pessoas que o país B.')7
+
+----------------------------------------------------
+Exercício 4
+n = int(input('Insira um número: '))
+a, b = 1, 1
+k = 1
+while k <= n-2:
+    a, b = b, a + b
+    k = k + 1
+    
+print(b)
+
+----------------------------------------------------
+Exercício 5
+a = int(input('Insira o valor de a: '))
+b = int(input('Insira o valor de b: '))
+while a % b != 0:
+    a, b = b, a%b
+print(f'mdc = {b}')
