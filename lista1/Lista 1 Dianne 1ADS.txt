@@ -1,0 +1,76 @@
+Dianne Faria de Brito - 1.semestre.ADS
+-----------------------------------------
+EXERCÍCIO 1
+n1 = input("Insira um número: ")
+n2 = input("Insira o segundo número: ")
+soma = int(n1) + int(n2)
+print(soma)
+------------------------------------------
+EXERCÍCIO 2
+metros = float(input('Insira um número em metros: '))
+mili = metros * 1000
+print(f'{metros} metros em milímetros: {mili}') 
+------------------------------------------
+EXERCÍCIO 3
+d = int(input('Insira a quantidade de dias: '))
+h = int(input('Insira a quantidade de horas: '))
+m = int(input('Insira a quantidade de minutos: '))
+s = int(input('Inira a quantidade de segundos: '))
+total_soma = (d * 24 * 3600) + (h * 60 * 60) + (m * 60) + s
+print(f'Total de segundos: {total_soma}')
+------------------------------------------
+EXERCÍCIO 4
+antigo = float(input('Insira o valor atual do salário: '))
+porc = float(input('Insira a porcentagem de aumento: '))
+aumento = antigo * (porc / 100)
+total = antigo + aumento
+print(f'O aumento será de R$ {aumento}.')
+print(f'O valor total do salário será R$ {total}.')
+------------------------------------------
+EXERCÍCIO 5
+inicial = float(input('Insira o valor da mercadoria: '))
+desconto = float(input('Insira o percentual do desconto: '))
+valor1 = inicial * (desconto / 100) 
+final = inicial - valor1
+print(f'O percentual de desconto corresponde a: R$ {valor1}')
+print(f'O valor do produto com desconto é: R$ {final}')
+------------------------------------------
+EXERCÍCIO 6
+distancia = float(input('Insira o total de KM: '))
+velocidade = float(input('Insira a velocidade média esperada para a viagem: '))
+tempo = (distancia / velocidade) * 60
+print(f'O tempo para finalizar a viagem será de: {tempo} minutos')
+------------------------------------------
+EXERCÍCIO 7
+celsi = float(input('Insira a temperatura em celsius: '))
+fahre = 9 * celsi / 5 + 32
+print(f'A temperatura convertida em farehnheit é: {fahre}.')
+-----------------------------------------
+EXERCÍCIO 8
+fahre = float(input('Insira a temperatura em farehnheit: '))
+celsi = (fahre - 32) / 1.8
+print(f'A temperatura convertida em celsius é: {celsi}.')
+------------------------------------------
+EXERCÍCIO 9
+km = float(input('Insira quantos quilômetros você percorreu: '))
+dias = int(input('Insira por quantos dias você alugou o carro: '))
+aluguel = dias * 60
+preco_km = km * 0.15
+total = aluguel + preco_km
+print(f'O valor total a pagar pelo carro é: R$ {total}')
+------------------------------------------
+EXERCÍCIO 10
+cigarros_por_dia = int(input('Insira a quantidade de cigarros fumados por dia: '))
+anos_fumados = int(input('Insira por quantos anos você já fumou: '))
+total_dias_fumados = anos_fumados * 365
+total_cigarros = (cigarros_por_dia) * total_dias_fumados
+minutos_perdidos = total_cigarros * 10
+horas_perdidas = (minutos_perdidos / 60 ) / 24
+
+print(f'A quantidade de dias perdidos serão de: {horas_perdidas}.')
+------------------------------------------
+EXERCÍCIO 11
+conta = 2 ** 1000000
+conta1 = len(str(conta))
+print(conta1)
+
