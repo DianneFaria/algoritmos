@@ -1,0 +1,44 @@
+Dianne Faria de Brito 1ADS
+
+Exercício1
+Primeiro ele inicia 2 variáveis com valor de x = 2 e y = 5, depois utilização a 
+função se para verificar se (y = 5) é maior que 8, como isso não é verdade ele 
+faz o (x = x * 2) que fica (x = 2 * 2), (x = 4), depois faz a soma de (x = 4 + y = 5) 
+que obtêm como resultado 9.
+
+Exercício 2
+Considerando que o laço inclui os extremos, ou seja, 1 até 4 significa 1, 2, 3, 4. 
+Então o 9 e 6 também rodaram todos os dígitos de 1 até chegar neles. Ele utiliza 3 
+condições (para i = 1 até 9), (se i != 3, então) e (para j = 1 até 6). O único 
+número de 1 até 9 que não será executado será o 3, todos os outros serão executados 
+6 vezes.
+1 = 6 | 2 = 6 | 4 = 6 | 5 = 6 | 6 = 6 | 7 = 6 | 8 = 6
+6 + 6 + 6 + 6 + 6 + 6 + 6 + 6 = 48 vezes.
+
+Exercício 3
+count = 0
+for n in range(1067, 3627):
+    if n % 2 == 0 and n % 7 == 0:
+        count = count + 1
+print(count)
+
+Primeiro o range de for percorre todos o números de 1067 até 3627, verificando se
+o resto da divisão por 2 da 0 (quer dizer que é o par), e depois se o resto da 
+divisão por 7 também daria 0 (para verificar se é divisível por 7). Por último um 
+contador para registrar quantos números passaram pelo filtro.
+
+Exercício 4
+count = 0
+for n in range (18644, 33087):
+    if '2' in str(n) and '7' not in str(n):
+        count = count + 1
+print(count)
+
+Ele irá analizar todos os números de 18644 até 33087, entra na condição if e tranforma
+os números e as variáveis em string para fazer a análise, depois executa a condição 
+de que se o número 2 está presente no número que está gravado em n, e se 7 não está em n.
+O contador irá mostrar o número de vezes que isso aconteceu.
+
+Exercício 5
+
+ 
