@@ -1,0 +1,106 @@
+﻿Dianne Faria de Brito - 1ADS
+
+Exercício 1
+a = int(input('Insira o primeiro lado do triângulo: '))
+b = int(input('Insira o segundo lado do triângulo: '))
+c = int(input('Insira o terceiro lado do triângulo: '))
+if a < b+c and b < a+c and c < a+b:
+    if a == b and b == c:
+        print('Esses valores formam um triângulo do tipo equilátero.')
+    elif a != b and a != c and b != c:
+        print('Esses valores formam um triângulo do tipo escaleno.')
+    else:
+        print('Esses valores formam um triângulo do tipo isósceles.')
+else:
+    print('Esses valores não formam um triângulo.')
+--------------------------------------------------------------
+
+Exercício 2
+ano = int(input('Digite o ano: '))
+if ano % 100 != 0 and ano % 4 == 0 or ano % 400 == 0:
+    print('É um ano bissexto')
+else:
+    print('Não é bissexto')
+--------------------------------------------------------------
+
+Exercício 3
+peso = int(input('Insira o peso total dos peixes em kg: '))
+
+if peso > 50:
+    
+    exc = (peso - 50) * 4
+    
+    print(f'Você excedeu o peso máximo. Valor da multa: R$ {exc:.2f}.')
+
+else:
+    
+    print(f'O peso {peso}kg está dentro da norma.')
+--------------------------------------------------------------
+
+Exercício 4
+a = int(input('Insira o primeiro número: '))
+b = int(input('Insira o segundo número: '))
+c = int(input('Insira o terceiro número: '))
+if a > b and a > c:
+    print(f'O maior número é {a}.')
+elif b > a and b > c:
+    print(f'O maior número é {b}.')
+elif c > a and c > b:
+    print(f'O maior número é {c}.')
+--------------------------------------------------------------
+
+Exercício 5
+a = int(input('Insira o primeiro número: '))
+
+b = int(input('Insira o segundo número: '))
+
+c = int(input('Insira o terceiro número: '))
+
+if a > b and a > c:
+    
+    print(f'O maior número é {a}.')
+
+elif b > a and b > c:
+    
+    print(f'O maior número é {b}.')
+
+elif c > a and c > b:
+    
+    print(f'O maior número é {c}.')
+
+if a < b and a < c:
+    
+    print(f'O menor número é {a}.')
+
+elif b < a and b < c:
+    
+    print(f'O menor número é {b}.')
+
+elif c < a and c < b:
+    
+    print(f'O menor número é {c}.')
+--------------------------------------------------------------
+Exercício 6
+salario = float(input('Insira quanto você ganha por hora: '))
+horas = float(input('Insira quantas horas você trabalha por mês: '))
+bruto = salario * horas
+ir = (bruto * 0.11)
+inss = (bruto * 0.08)
+sind = (bruto * 0.05)
+liquido = bruto - ir - inss - sind 
+print(f'Seu salário bruto: R$ {bruto:.2f}.')
+print(f'Desconto IR (imposto de renda): {ir:.2f}.')
+print(f'Desconto INSS: {inss:.2f}.')
+print(f'Desconto sindicato: {sind:.2f}.')
+print(f'Seu salário líquido: {liquido:.2f}.')
+
+--------------------------------------------------------------
+Exercício 7
+metros = float(input('Insira em m² o tamanho da área a ser pintada: '))
+latas = metros / 54
+preco = 80
+latas_final =  latas // 1
+if latas_final == latas:
+    print(f'A quantidade de latas é: {latas} e o preço será de: {latas * preco:.2f}')
+else:
+     print(f'A quantidade de latas é: {latas_final + 1} e o preço será de: {(latas_final + 1) * preco:.2f}')
