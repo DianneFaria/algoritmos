@@ -1,0 +1,77 @@
+Dianne Faria de Brito 1ºADS
+
+Exercício 1
+import random 
+lista = []
+for n in range(10):
+    lista.append(random.randint(1, 100))
+    
+maior = lista[0]
+menor = lista[0]
+
+for numero in lista:
+    if numero > maior:
+        maior = numero
+    if numero < menor:
+        menor = numero
+    
+print('Lista de números gerados:', lista)
+print('Número maior:', maior)
+print('Número menor:', menor)
+
+Exercício 2
+import random
+lista = []
+par = []
+impar = []
+for n in range (20):
+    lista.append(random.randint(1, 100))
+for n in lista:
+    if n % 2 == 0:
+        par.append(n)
+    else:
+        impar.append(n)
+
+print(lista)
+print(par)
+print(impar)
+
+Exercício 3
+import random
+lista1 = []
+lista2 = []
+lista3 = []
+for n in range (10):
+    lista1.append(random.randint(1, 100))
+    lista2.append(random.randint(1, 100))
+    lista3.append(lista1[n])
+    lista3.append(lista2[n])
+    
+print (lista1)
+print (lista2)
+print (lista3)
+
+Exercício 4
+lista = '''“The Python Software Foundation and the global Python 
+community welcome and encourage participation by everyone. Our community is based on mutual respect, tolerance, and encouragement and we are working to help each other live up to these principles. We want our community to be more diverse: whoever you are, and 
+whatever your background, we welcome you.”'''
+lista = lista.lower()
+lista = lista.replace('"', '').replace('.', ' ').replace(',', ' ').replace(':',' ')
+lista = lista.split()
+print(lista)
+for palavra in lista:
+    if palavra[0] in 'python' or palavra[-1] in 'python':
+        print(palavra)
+
+Exercício 5
+lista = '''“The Python Software Foundation and the global Python community welcome and encourage participation by everyone. Our community is based on mutual respect, tolerance, and encouragement, and we are working to help each other live up to these principles. We want our community to be more diverse: whoever you are, and whatever your background, we welcome you.”'''
+lista = lista.lower()
+lista = lista.replace('"','').replace('.',' ').replace(',', '').replace(':', ' ')
+lista = lista.split()
+count = 0
+for palavra in lista:
+    if palavra[0] in 'python' or palavra[-1] in 'python':
+        if len(palavra) >= 4:
+            count = count + 1
+print(count)
+
